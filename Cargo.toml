@@ -1,0 +1,22 @@
+[package]
+name = "unkey-rust-rocket"
+version = "0.1.0"
+edition = "2021"
+authors = ["unrenamed <renkonazbka@gmail.com>"]
+description = """
+A generative AI REST API built with Rust and Rocket web framework that integrates 
+Unkey for managing call quotas
+"""
+license = "MIT"
+repository = "https://github.com/unrenamed/unkey-rust-rocket"
+readme = "README.md"
+keywords = ["Rust", "Rocket", "Unkey", "REST API", "Quota management"]
+categories = ["api-bindings", "web-programming", "security"]
+
+[dependencies]
+anyhow = "1.0"
+reqwest = { version = "0.12.8", features = ["json"] }
+dotenv = "0.15"
+unkey = "0.5.0"
+lazy_static = "1.5.0"
+rocket = { version = "0.5.1", features = ["json", "serde_json"] }
